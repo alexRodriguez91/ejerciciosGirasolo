@@ -12,11 +12,11 @@ rl.question('Ingrese un string: ', str => {
 
   for (let i = 0; i < str.length; i++) {
     for (j = i; j < str.length - i; j++) {
-      if (!buf.includes(str[j])) { 
+      if (!buf.includes(str[j])) {
         buf.push(str[j])
       } else {
         if (maxLenght < buf.length) {
-          maxLenght = buf.length 
+          maxLenght = buf.length
           buf = []
         }
       }
